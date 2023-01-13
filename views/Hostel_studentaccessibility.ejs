@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel_studentaccess</title>
+    <link href='../stylesheets/hostelstudentaccessibility.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <h1>NITC MESS MANAGEMENT</h1>
+    </header>
+    <img id="logo" src="../images/nitc.png" />
+    <div class="horizontal-bar">
+        <marquee direction="left" >
+            <h2>Update payment date monthly </h2></marquee> 
+        <a href="/logout">Logout</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+    </div>
+    <br><br>
+    <nav class="nav-bar">
+        <a href="/hostel">Home</a>
+        <a href="/hostel/hostelDues">Hostel dues</a><br>
+        <a href="/hostel/changePassword">Change password</a>
+    </nav>
+   
+
+    <div class="hostel-list" id="hostel-list-detailed">
+        <form action="" method="POST">
+            <label for="start"> Payment start date:</label>
+            <input type="date" id="start" name="start"><br>
+            <label for="end">Payment end date:&nbsp</label>
+            <input type="date" id="end" name="end">
+            <input type="submit" value="Submit">
+          </form>
+          <br><br>
+        Student page accessibility: <% if(is_student_access){ %>
+            <font color="green" size="6%">&#10004</font>
+          <% } else{ %>  
+            Not
+         <% } %>
+    </div>
+    <div id="top" ><h2>Hostel:A</h2></div>
+</body>

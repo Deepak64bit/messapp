@@ -1,0 +1,229 @@
+.horizontal-bar a{ 
+    text-decoration: none;
+    color: white;
+    padding-right:1.5%;
+  }
+  
+  .horizontal-bar a:hover{
+    font-size: 120%;
+  }
+  
+  .horizontal-bar {
+    background-color: #333333;
+    text-align: right;
+    font-size: 120%;
+    margin-left: 14.9%;
+    margin-right: 0%;
+    width: 85.5%;
+    position: fixed;
+    top:17.5%;
+    color: white;
+  }
+  
+  .nav-bar {
+    position: fixed;
+    nav-left: root;
+    margin-left: 0%;
+    background-color:#88888888;
+    top: 17.5%;
+    bottom: 0%;
+    width: 15%;
+    position: fixed;
+  }
+  
+  .nav-bar a{
+    font-size: 150%;
+    text-decoration: none;
+    color: white;
+    background-color: #616161;
+    border: 2px solid #080805;
+    display: inline-block;
+    width: 98%;
+    height: 7%;
+    border-collapse: collapse;
+    padding-top: 0%;
+  }
+  
+  .nav-bar a:hover{
+    font-size: 160%;
+  }
+  
+#mess-list-detailed {
+    margin-left: 15%;
+    display:block;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-size: 175%;
+    margin-top: 10%;
+}
+#mess-list-detailed-img{
+    display: block;
+    width: 90%;
+    height: 200%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.remaining-occupancy {
+    display: inline-block;
+    text-align: center;
+    color: green;
+}
+.per-day-cost {
+    display: inline-block;
+    text-align: right;
+}
+
+ul{
+    list-style: none;
+}
+
+#submit_button{
+    padding-left: 90%;
+    font-size: 120%;
+}
+
+
+#logo{ 
+  position:fixed; 
+  top:0%; 
+  left:0%; 
+  float: left;
+  height:17.2%; 
+  width:11%; 
+  } 
+  
+header h1 {
+    font-size: 325.5%;
+    background-color: #7E7E7E;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #221c27, 0px 0px 10px #3a3341, 0px 0px 10px #1a0b29,
+    0px 0px 20px #0f021d;
+    text-align: center;
+    position: fixed;
+    width:100%;
+    height: 17.2%;
+    top: -4.7%;
+    padding-top: 3%;
+  }   
+
+  a.lightbox img {
+    height: 150px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    margin: 94px 20px 20px 20px;
+    }
+    
+    /* Styles the lightbox, removes it from sight and adds the fade-in transition */
+    
+    .lightbox-target {
+    position: fixed;
+    top: -100%;
+    width: 70%;
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,.7);
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    overflow: hidden;
+     
+    }
+    
+    /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+    
+    .lightbox-target img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    max-height: 100%;
+    max-width: 100%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+      
+    }
+    
+    /* Styles the close link, adds the slide down transition */
+    
+    a.lightbox-close {
+    display: block;
+    width:50px;
+    height:50px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: -80px;
+    
+    right: 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    }
+    
+    /* Provides part of the "X" to eliminate an image from the close link */
+    
+    a.lightbox-close:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+    }
+    
+    /* Provides part of the "X" to eliminate an image from the close link */
+    
+    a.lightbox-close:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    }
+    
+    /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+    
+    .lightbox-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+      overflow:scroll;
+    }
+    
+    .lightbox-target:target img {
+    max-height: 100%;
+    max-width: 100%;
+    }
+    
+    .lightbox-target:target a.lightbox-close {
+    top: 0;
+    }
+    
+    

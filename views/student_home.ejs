@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link href='../stylesheets/studenthome.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <h1>NITC MESS MANAGEMENT</h1>
+    </header>
+    <img id="logo" src="../images/nitc.png"/>    
+    <div class="horizontal-bar">
+        <marquee direction="left" >
+            <h2>NITC welcomes you to Mess Management</h2></marquee> 
+        <a href="/logout">Logout</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+    </div>
+    <br><br>
+    <nav class="nav-bar">
+        <a href="/student/payDues">Pay Fees</a><br>
+        <a href="/student/chooseMess">Choose Mess</a>
+    </nav>
+    <% if(messages.length>0){
+       %>
+       <script>
+        alert("<%=messages[0].text%>");
+        
+        </script>
+    <%} %> 
+    <div class="mess-list" id="mess-list-brief">
+        <ul>
+            <li>
+                <h3>A Hostel</h3><br>
+                <img src="../images/A.png" alt="A Hostel" style="width:1000px;height:500px;">
+            </li>
+            <li>
+                <h3>B Hostel</h3><br>
+                <img src="../images/B.png" alt="B Hostel" style="width:1000px;height:500px;">
+            </li>
+            <li>
+                <h3>C Hostel</h3><br>
+                <img src="../images/C.png" alt="C Hostel" style="width:1000px;height:500px;">
+            </li>
+            <li>
+                <h3>D Hostel</h3><br>
+                <img src="../images/D.png" alt="D Hostel" style="width:1000px;height:500px;">
+            </li>
+            <li>
+                <h3>E Hostel</h3><br>
+                <img src="../images/E.png" alt="E Hostel" style="width:1000px;height:500px;">
+            </li>
+            <li>
+                <h3>F Hostel</h3><br>
+                <img src="../images/F.png" alt="F Hostel" style="width:1000px;height:500px;">
+            </li>
+            <li>
+                <h3>G Hostel</h3><br>
+                <img src="../images/G.png" alt="G Hostel" style="width:1000px;height:500px;">
+            </li>
+            <li>
+                <h3>PG1 Hostel</h3><br>
+                <img src="../images/PG1.png" alt="PG1 Hostel" style="width:1000px;height:500px;">
+            </li>
+            <li>
+                <h3>PG2 Hostel</h3><br>
+                <img src="../images/PG2.png" alt="PG2 Hostel" style="width:1000px;height:500px;">
+            </li>
+            <li>
+                <h3>LH Hostel</h3><br>
+                <img src="/local-file-not-found.png" alt="LH Hostel" style="width:1000px;height:500px;">
+            </li>
+            <li>
+                <h3>MHB Hostel</h3><br>
+                <img src="../images/MHB.png" alt="MHB Hostel" style="width:1000px;height:500px;">
+            </li>
+            <li>
+                <h3>MHB2 Hostel</h3><br>
+                <img src="../images/MHB2.png" alt="MHB2 Hostel" style="width:1000px;height:500px;">
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

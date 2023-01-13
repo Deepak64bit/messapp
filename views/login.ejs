@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+<link href='stylesheets/login.css' rel='stylesheet' type='text/css'>
+<header>
+    <h1>NITC MESS MANAGEMENT</h1>
+</header>
+<div class="login">
+  <h2 class="active"> sign in </h2>
+  <form id="login-form" action="/login" method="POST">
+    <select id="select-user" name="userType" class="text1">
+      <option value="student">Student</option>
+      <option value="mess">Mess Caretaker</option>
+      <option value="hostel">Hostel Office</option>
+  </select>
+  <br>
+    <span>User :</span>
+    
+    <input id="userID" class="text" type="text" name="userID" maxlength="15em"/>
+    <span>username</span>
+    <br>
+    <input d="password" type="password" class="text" name="password" maxlength="15em"/>
+    <span>password</span>
+    <br>
+    <button class="signin" id="login-submit" type="submit" name="submit" value="submit" form="login-form">
+      Sign In
+    </button>
+    <hr>
+  </form>
+</div>
+</body>

@@ -1,0 +1,9 @@
+Web Programming Project - Mess Management System
+Before setting up this app in your system, it is required that you have node.js installed in your system 
+
+steps for setting up the app - 
+1. clone the repository to your device
+2. Navigate to the location of the app
+3. run "npm install" to install the dependencies
+4. run "npm start" to start the app
+5. You can access the app from localhost:3000

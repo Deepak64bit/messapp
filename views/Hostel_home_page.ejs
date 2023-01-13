@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel_homepage</title>
+    <link href='../stylesheets/hostelhomepage.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <h1>NITC MESS MANAGEMENT</h1>
+    </header>
+    <img id="logo" src="../images/nitc.png" />
+    <div class="horizontal-bar">
+        <marquee direction="left" >
+            <h2>Welcome to Hostel Administration </h2></marquee> 
+        <a href="/logout">Logout</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+    </div>
+    <br><br>
+    <nav class="nav-bar">
+        <a href="/hostel/hostelDues">Hostel dues</a><br>
+        <a href="/hostel/studentAccessibility">Student accessibility</a>
+        <a href="/hostel/changePassword">Change password</a>
+    </nav>
+
+    <div class="hostel-list" id="hostel-list-detailed">
+        <ul>
+            <li>
+                <h4>Current Due payment period: <%= start_date %>  &nbsp;&nbsp;  to  &nbsp;&nbsp;  <%= end_date %>  </h4><br>
+            </li>
+            <li>
+                <h4>Total students: <%= no_of_students %> <br> Total rooms:275  </h4> 
+            </li> 
+        </ul>
+    </div>
+    <!-- <div id="bottom" ><h3>&nbsp&nbsp Contact:<br>Hostel warden<br>98XXXXXX08</h3></div> -->
+    <div id="top" ><h2>Hostel:<%= hostelName %> </h2></div>
+</body>

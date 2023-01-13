@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="stylesheets/about.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>This website is developed as part of the Web Programming course and is trying to implement an innovative way of 
+    managing the mess system existing in the institute without any need of mess card where student can choose the mess of their choice
+    and the payment related activities can be monitored by the responsible authority.
+  </p>
+  <p>Our mission is to avoid difficulty of the students as well as the authority in mess related activities.</p>
+
+  <form action="" method="POST">
+    <input type="submit" id = backbutton class="btn btn-primary" value="Proceed to Home page">
+  </form>
+</div>
+
+<h2 style="text-align:center">Dev Team</h2>
+<div class="row">
+
+  <div class="column">
+    <div class="card">
+        <img src="../images/AL.png" alt="Alex" style="width:100%">
+      <div class="container">
+        <h2>Alex M Zubin</h2><hr>
+        <p class="title">Student, NITC (B19 batch)</p>
+        <p>Seeking challenges and opportunities where I can fully use my skills for the success of the organization.</p><br><br><br>
+        <p>alexmzubin@gmail.com</p>
+        <p><button class="button" id="3" onclick="redirect(this)">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <img src="../images/dm.png" alt="Alex" style="width:100%">
+      <div class="container">
+        <h2>Deepak M</h2><hr>
+        <p class="title">Student, NITC (B19 batch)</p>
+        <p>CSE, UG student at NIT Calicut with curious mind and flexibility. Passionate coder with interest in Web designing.</p><br>
+        <p>deepakmsreedeepam@gmail.com</p>
+        <p><button class="button" id="4" onclick="redirect(this)">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="../images/JK.png" alt="Alex" style="width:100%" >
+      <div class="container">
+        <h2>Jishnu K</h2><hr>
+        <p class="title">Student, NITC(B19 batch)</p>
+        <p>Hardworking College student. Committed to utilising my skills to further the mission of
+          a company. Interested in Artificial Intelligence, Machine Learning, and Cloud Security.</p>
+          
+        <p>jishnuk.1201@gmail.com</p>
+        <p><button class="button" id="2" onclick="redirect(this)">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="../images/GN.png" alt="Alex" style="width:100%" >
+      <div class="container">
+        <h2>G Nikhil</h2><hr>
+        <p class="title">Student, NITC (B19 batch)</p>
+        <p>Currently pursuing final year UG programme at NIT, Calicut. Computer Science student with good programming
+          skills and an enthusiastic learner. Have intuitive problem solving skills with decent proficiency in competitive coding.</p>
+        <p>garudanikhil21@gmail.com</p>
+        <p><button class="button" id="1" onclick="redirect(this)">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  var id =document.getElementById("myButton")
+  function redirect(elem) {
+      if(elem.id == "1")
+      location.href = "mailto:garudanikhil21@gmail.com";
+      else if(elem.id == "2")
+      location.href = "mailto:jishnuk.1201@gmail.com";
+      else if(elem.id == "3")
+      location.href = "mailto:alexmzubin@gmail.com";
+      else if(elem.id == "4")
+      location.href = "mailto:deepakmsreedeepam@gmail.com";
+  };
+</script>
+</body>
+</html>

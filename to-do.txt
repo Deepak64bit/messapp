@@ -1,0 +1,32 @@
+Javascript to be added to
+    - login
+    - hostel change password page
+
+hostel & mess Name top right corner ejs to be updated. 
+
+check whether dues cleared before choosing MESS
+
+app.js - query condition to be added
+
+add if-else coditions for dates in mess_incharge.ejs . Look for similar cases and add try-catch blocks
+            - hostel_home_page.ejs
+
+change total capacity wherever needed
+
+sql query in hostel_dues page to be updated. Only show students in that hostel
+
+diff start and end dates
+
+check if mess is completely filled, handle duplicate entries.
+
+mess dues page selecting active days scenario
+
+check if session id exits for each request in every routes
+
+add multiple start and end days - Maybe
+
+hostel_dues handle summation of dues
+
+increase size of goto login page button
+
+what idf login in between start and end.

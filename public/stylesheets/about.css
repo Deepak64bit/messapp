@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 24.8%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(17, 9, 22, 0.2);
+  margin: 30px;
+}
+
+.about-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #414c64;
+  color: white;
+  font-size: larger;
+}
+.container {
+  padding: 0 16px;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(6, 34, 53);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  margin: 0;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  background-color: rgb(32, 23, 119);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 8px;
+  color: white;
+
+}
+
+.button:hover {
+  background-color: rgb(153, 55, 156);
+}

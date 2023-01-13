@@ -1,0 +1,84 @@
+.horizontal-bar a{ 
+    text-decoration: none;
+    color: white;
+    padding-right:1.5%;
+  }
+  
+  .horizontal-bar a:hover{
+    font-size: 120%;
+  }
+  
+  .horizontal-bar {
+    background-color: #333333;
+    text-align: right;
+    font-size: 120%;
+    margin-left: 14.9%;
+    margin-right: 0%;
+    width: 85.5%;
+    position: fixed;
+    top:17.5%;
+    color: white;
+  }
+  
+  .nav-bar {
+    position: fixed;
+    nav-left: root;
+    margin-left: 0%;
+    background-color:#88888888;
+    top: 17.5%;
+    bottom: 0%;
+    width: 15%;
+    position: fixed;
+  }
+  
+  .nav-bar a{
+    font-size: 150%;
+    text-decoration: none;
+    color: white;
+    background-color: #616161;
+    border: 2px solid #080805;
+    display: inline-block;
+    width: 98%;
+    height: 7%;
+    border-collapse: collapse;
+    padding-top: 0%;
+  }
+  
+  .nav-bar a:hover{
+    font-size: 160%;
+  }
+  
+#hostel-list-detailed {
+    margin-left: 17%;
+    padding-top: 17%;
+    font-size: 200%;
+}
+
+#logo{ 
+    position:fixed; 
+    top:0%; 
+    left:0%; 
+    float: left;
+    height:17.2%; 
+    width:11%; 
+    } 
+  
+  header h1 {
+    font-size: 325.5%;
+    background-color: #7E7E7E;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #221c27, 0px 0px 10px #3a3341, 0px 0px 10px #1a0b29,
+    0px 0px 20px #0f021d;
+    text-align: center;
+    position: fixed;
+    width:100%;
+    height: 17.2%;
+    top: -4.7%;
+    padding-top: 3%;
+  }   
+
+#top{
+position: fixed;
+top: 11%;
+right:2%;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_choose_mess</title>
+    <link href='../stylesheets/studentchoosemess.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <h1>NITC MESS MANAGEMENT</h1>
+    </header>
+    <img id="logo" src="../images/nitc.png" />
+    <div class="horizontal-bar">
+        <marquee direction="left" >
+            <h2>Complete your payment and choose Mess </h2></marquee> 
+        <a href="/logout">Logout</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+    </div>
+    <br><br>
+    <nav class="nav-bar">
+        <a href="/student">Home</a>
+        <a href="/student/payDues">Pay Fees</a><br>
+    </nav>
+
+    <form id="choose mess" action="" method="POST">
+        <div class="mess-list" id="mess-list-detailed">
+            <ul>
+                <% for( let i = 0; i < mess_details.length; i++ ) { %>
+                    <li>
+                        <h3> <input type="radio" name="mess" value= "<%= mess_details[i].Hostel %>" ><%= mess_details[i].Hostel %> Mess  </h3><br>
+                        <span class="total-occupancy">Total occupancy: <%= mess_details[i].Total_Capacity %>&nbsp;&nbsp;&nbsp;</span><span class="remaining-occupancy">Remaining occupancy: <%= mess_details[i].remaining %>&nbsp;&nbsp;&nbsp;</span><span class="per-day-cost">Per Day cost: Rs <%= mess_details[i].Per_day_cost %></span>
+                        <br>
+                        
+                        <!-- <img src="../images/<%= mess_details[i].Hostel %>me.png" alt="", width="202", height="202"> -->
+                        <a class="lightbox" href="#dog">
+                            <img src="../images/<%= mess_details[i].Hostel %>me.png" alt="", width="202", height="202"/>
+                        </a> 
+                         <div class="lightbox-target" id="dog">
+                            <img src="../images/<%= mess_details[i].Hostel %>me.png" alt="", width="602", height="402"/>
+                            <a class="lightbox-close" href="#"></a>
+                         </div>
+                    </li>
+                <% } %>
+            </ul>
+        </div> 
+        <div id="submit_button">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    </body>
+    </html>

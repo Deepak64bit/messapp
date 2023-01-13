@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_dues</title>
+    <link href='../stylesheets/studentpaydues.css' rel='stylesheet' type='text/css'>
+<body>
+    <header>
+        <h1>NITC MESS MANAGEMENT</h1>
+    </header>
+    <img id="logo" src="../images/nitc.png"/>
+    <div class="horizontal-bar">
+        <marquee direction="left" >
+            <h2>Welcome to Mess Administration </h2></marquee> 
+        <a href="/logout">Logout</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+    </div>
+    <br><br>
+    <nav class="nav-bar">
+        <a href="/student">Home</a><br>
+        <a href="/student/chooseMess">Choose Mess</a>
+    </nav>
+
+    <form id="dues-payment" action="", method="POST">
+        <Label><b>Name:</b></br> <%= name %>  </Label>
+        <br>
+        <Label><b>Roll Number:</b></br> <%= session.userID %> </Label>
+        <br>
+        <Label><b>Dues:</b></br> Rs. <%= dues %> </Label>
+        
+        <br>
+        <input type="submit" value="Make payment" onclick="confirm('Proceed for payment?')">
+    </form>
+</body>
+</html>

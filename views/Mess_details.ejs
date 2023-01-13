@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess_details</title>
+    <link href='../stylesheets/messdetails.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <h1>NITC MESS MANAGEMENT</h1>
+    </header>
+    <img id="logo" src="../images/nitc.png"/>
+    <div class="horizontal-bar">
+        <marquee direction="left" >
+            <h2>Verify Mess details atleast once a month </h2></marquee> 
+        <a href="/logout">Logout</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+    </div>
+    <br><br>
+    <nav class="nav-bar">
+        <a href="/mess">Home</a><br>
+        <a href="/mess/messDues">Mess Dues</a><br>
+    </nav>
+    <div class="mess" id = "messdues">            
+        <form action="" method="POST">
+            <label for="daycharge">Per day charge:  &#8377;</label>
+            <input type="text" id="charge" name="charge" style="width:25pt;height: 20pt;"><br><br>
+            <label for="capacity">Maximum Mess Capacity:  </label>
+            <input type="text" id="capacity" name="capacity" style="width:25pt;height: 20pt;"><br><br>
+            <input type="submit" value="Submit" style="background-color: gray; font-size: 60%;">
+        </form>
+    </div>
+    <div id="top" ><h2>Mess:<%= messName %> </h2></div>
+
+    <script type="text/javascript">
+        document.getElementById('charge').value = '120';
+    </script>
+</body>

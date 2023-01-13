@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mess_incharge</title>
+    <link href='../stylesheets/messincharge.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="new">
+    <header>
+        <h1>NITC MESS MANAGEMENT</h1>
+    </header>
+    <img id="logo" src="../images/nitc.png" />
+    </div>
+    <div class="horizontal-bar">
+        <marquee direction="left" >
+            <h2>Welcome to Mess Administration </h2></marquee> 
+        <a href="/logout">Logout</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+    </div>
+    <br><br>
+    <nav class="nav-bar">
+        <a href="/mess/messDues">Mess Dues</a><br>
+        <a href="/mess/messDetails">Mess Details</a>
+    </nav>
+    <div class="incharge-details">
+        <h2>Next mess dues are to be updated by <%= deadline %>  </h2>
+        <h2>Current payment period: <%= start_date %> &nbsp;&nbsp;to&nbsp;&nbsp; <%= end_date %> </h2>
+        <img src="../images/<%= messName %>.png" alt="mess image" style="width:1000px;height:500px;">
+    </div>
+    <div id="top" ><h2> Mess:<%= messName %> </h2></div>
+</body>

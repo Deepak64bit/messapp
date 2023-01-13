@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel_dues</title>
+    <link href='../stylesheets/hosteldues.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <h1>NITC MESS MANAGEMENT</h1>
+    </header>
+    <img id="logo" src="../images/nitc.png" />
+    <div class="horizontal-bar">
+        <marquee direction="left" >
+            <h2>Update dues monthly </h2></marquee> 
+        <a href="/logout">Logout</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+    </div>
+    <br><br>
+    <nav class="nav-bar">
+        <a href="/hostel">Home</a><br>
+        <a href="/hostel/studentAccessibility">Student accessibility</a>
+        <a href="/hostel/changePassword">Change password</a>
+    </nav>
+        <form action="" method="POST">
+            <div class="day" id = "dropday">
+                No. of days: 
+                <select name="day">
+                    <% for( let i = 1; i < 32; i++ ) { %>
+                        <option value="<%= i %>"><%= i %></option>
+                    <% } %>
+                </select>
+            <br><br>            
+            
+        
+            <label for="daycharge">Per day charge:  &#8377;</label>
+            <input type="text" id="charge" name="charge" style="width:25pt;height: 20pt;"><br>
+            <input type="submit" value="Submit"><br>
+        </form>
+            <br>
+            <table>
+                <tr>
+                  <!-- <th>STUDENT NAME</th> -->
+                  <th>ROLL NUMBER</th>
+                  <th>NAME</th>
+                  <!-- <th>MESS CHARGE</th> -->
+                  <th>TOTAL DUES</th>
+                  <th>PAYMENT STATUS</th>
+                </tr>
+
+                <% for( let i = 0; i < roll_numbers.length; i++ ) { %>
+                    <tr>
+                        <td> <%= roll_numbers[i].Student_Roll_No %> </td>
+                        <td> <%= roll_numbers[i].name %>  </td>
+                        <td> <%= roll_numbers[i].dues %>  </td>
+                        <td> 
+                            <% if( roll_numbers[i].dues == 0 ){ %>
+                                <font color="green" size="5%">&#10004</font>
+                            <% } else{ %>  
+                                <font color="red" size="5%">&#10060</font>
+                            <% } %>
+                             
+                        </td>
+                    </tr>
+                <% } %>
+
+
+                <!-- <tr>
+                  <td>Alfred Disouza</td>
+                  <td>BXXXXXXAA </td>
+                  <td>2100</td>
+                  <td>3600</td>
+                  <td>5700</td>
+                  <td><font color="green" size="5%">&#10004</font></td>
+                </tr> -->
+                <!-- <tr>
+                  <td>Christopher Perera</td>
+                  <td>BXXXXXXAA </td>
+                  <td>2100</td>
+                  <td>3600</td>
+                  <td>5700</td>
+                  <td><font color="red" size="5%">&#10060</font></td>
+                </tr> -->
+        
+              </table>
+            
+    </div>
+    <div id="top" ><h2>Hostel:A</h2></div>
+
+    <script type="text/javascript">
+        document.getElementById('charge').value = '70';
+    </script>
+</body>

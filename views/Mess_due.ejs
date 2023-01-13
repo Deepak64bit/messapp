@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess_dues</title>
+    <link href='../stylesheets/messdue.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <h1>NITC MESS MANAGEMENT</h1>
+    </header>
+    <img id="logo" src="../images/nitc.png" />
+    <div class="horizontal-bar">
+        <marquee direction="left" >
+            <h2>Welcome to Mess payment details </h2></marquee> 
+        <a href="/logout">Logout</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+    </div>
+    <br><br>
+    <nav class="nav-bar">
+        <a href="/mess">Home</a><br>
+        <a href="/mess/messDetails">Mess Details</a><br>
+    </nav>
+    <div id="para1">Note: To edit active days:<br>
+        1. Choose the roll number of a student<br>
+        2. Edit active days corresponding to that student <br>
+        3. Click on submit.
+    </div><br><br>
+    
+    <br><br>
+    
+    <div class="mess" id = "messdues">    
+        <form action="" method="POST">
+            Choose Student Roll No:
+            <select name = "rollNo">
+                <% for( let i = 0; i < student_details.length; i++ ) { %>
+                    <option value="<%= student_details[i].Student_Roll_No %>"><%= student_details[i].Student_Roll_No %></option>
+                <% } %>
+            </select>
+    
+            <div class="day" id = "dropday">
+                No. of Active days: 
+                <select name="day">
+                    <% for( let i = 1; i < 32; i++ ) { %>
+                        <option value="<%= i %>"><%= i %></option>
+                    <% } %>
+                </select>
+            </div>
+            <br>
+            <input type="submit" value="Submit">
+            
+        </form>
+           
+        <br><br>
+            <table>
+                <tr>
+                  <th>STUDENT NAME</th>
+                  <th>ROLL NUMBER</th>
+                  <th>ACTIVE DAYS</th>
+                </tr>
+                <% for( let i = 0; i < student_details.length; i++ ) { %>
+                    <tr>
+                        <td> <%= student_details[i].student_name %> </td>
+                        <td> <%= student_details[i].Student_Roll_No %> </td>
+                        <td> <div id="changeable"> <%= student_details[i].No_of_days %> </div> </td>
+                    </tr>
+                <% } %> 
+            </table>
+        </div>    
+    
+        <div id="top" ><h2> Mess:<%= messName %> </h2></div>
+    <script type="text/javascript">
+        document.getElementById('charge').value = '70';
+    </script>
+</body>
